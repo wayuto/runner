@@ -45,18 +45,20 @@ Replace `[path_to_file]` with the path to the file you want to execute.
 
 #### Examples
 
-- To run a C file:
-
-python main.py path/to/source.c {output_path}
+- To run a C/C++ file:
+```bash
+python main.py path/to/source.c [output_path]
+```
 
 - To run a PHP script:
-
-python main.py path/to/script.php {port}
+```bash
+python main.py path/to/script.php [port]
+```
 
 - To run a shell script:
-
-python main.py path/to/script.sh {shell}
-
+```bash
+python main.py path/to/script.sh [shell]
+```
 
 ## Configuration
 
