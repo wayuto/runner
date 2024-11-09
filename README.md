@@ -15,7 +15,7 @@ To get started with the Runner project, follow these steps:
 
 ### Prerequisites
 
-- Python 3.6 or higher
+- Python 3.10 or higher
 - GCC and G++ (for C/C++ compilation)
 - PHP (for PHP script execution)
 - A Unix-like shell (for shell script execution)
