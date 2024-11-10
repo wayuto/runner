@@ -8,6 +8,8 @@ The Runner project is designed to execute various types of files, including C/C+
 - Run PHP scripts with a built-in server.
 - Execute shell and batch scripts.
 - Easy to extend and integrate with other tools.
+- Run Python script
+- More languages developing...
 
 ## Getting Started
 
@@ -15,7 +17,7 @@ To get started with the Runner project, follow these steps:
 
 ### Prerequisites
 
-- Python 3.10 or higher
+- Python 3.10 or higher ([Official Website](https://www.python.org))
 - GCC and G++ (for C/C++ compilation)
 - PHP (for PHP script execution)
 - A Unix-like shell (for shell script execution)
@@ -24,7 +26,7 @@ To get started with the Runner project, follow these steps:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/wayuto/runner.git
+git clone https://github.com/wayuto/runner.git -depth 1
 ```
 2. Navigate to the project directory:
 
@@ -52,7 +54,7 @@ python main.py path/to/source.c [output_path]
 
 - To run a PHP script:
 ```bash
-python main.py path/to/script.php [port]
+python main.py path/to/index.php [port]
 ```
 
 - To run a shell script:

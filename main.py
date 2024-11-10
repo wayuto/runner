@@ -30,7 +30,7 @@ def main(target: str = "") -> None:
             # This is the only type have no module, it's so easy that I don't know what can I do.
             system(f"python {target}")
 
-        case "php":
+        case "php" | "phtml" | "html":
             from modules.php import php
             # DEFAULT_PORT is defined in config.py
             port = lambda : int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_PORT
