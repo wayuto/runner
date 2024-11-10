@@ -75,7 +75,3 @@ Replace `[path_to_file]` with the path to the file you want to execute.
 ## Configuration
 
 The project uses a `config.py` file to manage configurations. You can set the default compiler, shell, and other settings in this file.
-
-## Contributing
-
-Contributions to the Runner project are welcome. Please ensure you follow the existing code structure and maintain the coding style.
