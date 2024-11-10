@@ -45,9 +45,20 @@ def main(target: str = "") -> None:
                 else (lambda result: sys.argv[2] if len(sys.argv) > 2 else DEFAULT_CMD)(1)
             sh(target, shell())
 
+        case "java":
+            from modules.java import java
+            output_path = lambda: sys.argv[2] if len(sys.argv) > 2 else ""
+            java(target, output_path())
+
+        case "version":
+            print("1.0.0")
+
+        case "egg":
+            from modules import egg
+
         case _:
             # Print the error about unknown type, maybe I don't add it to the project
-            print(f"runner:\a\033[93m warning: \033[90m{target_type}")
+            print(f"runner:\a\033[93m warning:\033[0m unknown type: \033[0m{target_type.group(1)}")
 
 
 if __name__ == "__main__":

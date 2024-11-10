@@ -10,5 +10,5 @@ DEFAULT_PORT: int = 8000
 # Default C/C++ compiler
 C_COMPILER: str = "gcc"
 CPP_COMPILER: str = "g++"
-# Used in module/c_or_cpp, decide if delete the default output file when it ran
+# Used in module/c_or_cpp and module/java, decide if delete the default output file when it ran
 DELETE: bool = True
