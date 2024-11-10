@@ -6,3 +6,7 @@ def sh(target: str, shell: str) -> None:
         system(f"{shell} {target}")
     else:
         system(f"{shell} ./{target}")
+
+
+if __name__ == "__main__":
+    print("Please run it with main.py")

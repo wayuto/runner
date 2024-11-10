@@ -11,7 +11,7 @@ def main(target: str = "") -> None:
     # Ret the type of target files
     target_type = re.search("([a-zA-Z0-9]+)$", target)
     if target_type is None:
-        print(f"runner:\a\033[91m warning: \033[90mInvalid target type: {target}")
+        print(f"runner:\033[91m warning: \033[90mInvalid target type: {target}")
         return
 
     # Run it according the type
@@ -54,11 +54,12 @@ def main(target: str = "") -> None:
             print("1.0.0")
 
         case "egg":
-            from modules import egg
+            from modules.egg import egg
+            egg()
 
         case _:
             # Print the error about unknown type, maybe I don't add it to the project
-            print(f"runner:\a\033[93m warning:\033[0m unknown type: \033[0m{target_type.group(1)}")
+            print(f"runner:\033[93m warning:\033[0m unknown type: \033[0m{target_type.group(1)}")
 
 
 if __name__ == "__main__":
@@ -66,4 +67,4 @@ if __name__ == "__main__":
         main(sys.argv[1])
     except IndexError as e:
         # Print the error if no files
-        print("runner:\a\033[91m error: \033[0mno input files")
+        print("runner:\033[91m error: \033[0mno input files")

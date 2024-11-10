@@ -6,3 +6,6 @@ def java(target: str, path: str) -> None:
         system(f"java {target}")
     else:
         system(f"java {target}")
+
+if __name__ == "__main__":
+    print("Please run it with main.py")
